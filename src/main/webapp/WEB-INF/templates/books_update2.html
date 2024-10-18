@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--更新图书信息-->
+<form th:action="@{/updateBooks3}" method="post">
+    <input type="hidden" name="_method" value="put">
+    <input type="hidden" name="name" th:value="${book.name}">
+    书价：<input type="text" name="price" th:value="${book.price}"><br>
+    数量：<input type="text" name="amount" th:value="${book.amount}"><br>
+    <input type="submit" value="update"><br>
+</form>
+
+</body>
+</html>

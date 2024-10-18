@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>删除图书页面</title>
+</head>
+<body>
+<h2>请输入要清除的图书的书名</h2>
+<form th:action="@{/deleteBooks2}" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="text" name="bookName"><br>
+    <input type="submit" value="删除">
+</form>
+</body>
+</html>

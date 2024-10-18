@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>出售图书页面</title>
+</head>
+<body>
+<form th:action="@{/sellBooks2}" method="post">
+    <input th:type="hidden" name="_method" value="put">
+   书名：<input th:type="id" name="name"><br>
+    数量：<input th:type="text" name="amount"><br>
+    <input type="submit" th:value="确认出售">
+</form>
+</body>
+</html>

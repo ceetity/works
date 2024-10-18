@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>请输入要查找的图书名</h2>
+<form th:action="@{/findBooksByName2}">
+    <input type="text" name="bookName" value="默认书名">
+    <input type="submit" th:value="确认">
+</form>
+</body>
+</html>

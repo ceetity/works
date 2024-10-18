@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>success</h1>
+<table id="dataTable" border="1" cellspacing="0" cellpadding="0" style="text-align: center;">
+    <tr>
+        <th colspan="3">Employee Info</th>
+    </tr>
+    <tr>
+        <th>name</th>
+        <th>price</th>
+        <th>amount</th>
+    </tr>
+    <tr th:each="book : ${bookList}">
+        <td th:text="${book.name}"></td>
+        <td th:text="${book.price}"></td>
+        <td th:text="${book.amount}"></td>
+    </tr>
+</table>
+<br>
+<a th:href="@{/}">返回主页</a>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加图书页面</title>
+</head>
+<body>
+<form th:action="@{/addBooks2}" method="post">
+    书名：<input th:type="text" name="name" ><br>
+    书价：<input th:type="text" name="price"><br>
+    图书数量：<input th:type="text" name="amount"><br>
+    <input th:type="submit" value="添加"><br>
+</form>
+</body>
+</html>
